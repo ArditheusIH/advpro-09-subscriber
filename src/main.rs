@@ -6,7 +6,7 @@ use std::{thread, time};
 pub struct UserCreatedEventMessage { 
     pub user_id: String, 
     pub user_name: String 
-} 
+}
  
 pub struct UserCreatedHandler; 
  
@@ -19,9 +19,9 @@ impl MessageHandler<UserCreatedEventMessage> for UserCreatedHandler {
         let ten_millis = time::Duration::from_millis(1000); 
         let now = time::Instant::now(); 
          
-        // thread::sleep(ten_millis); 
+        thread::sleep(ten_millis); 
       
-        println!("In Ade’s Computer [129500004y]. Message received: {:?}", 
+        println!("In teus’s Computer [2206083451]. Message received: {:?}", 
 message); 
         Ok(()) 
     } 
